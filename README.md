@@ -1,2 +1,2 @@
 # Bienvenidos a "Dream Detail"
-Bienvenidos a mi primer proyecto como desarrollador. En este trabajo para el curso de Coderhouse utilicé Html para desarrollar la estructura del proyecto y Css para derle formato y estética.
+Bienvenidos a mi primer proyecto como desarrollador. En este trabajo para el curso de Coderhouse utilicé Html para desarrollar la estructura del proyecto y Css para darle formato y estética.
