@@ -226,9 +226,8 @@ border:none;
 
 }
 .sucursal__boton{
-    margin: 100px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     color: white;
     background-color:rgb(96, 10, 10);
     border-radius: 30%;
@@ -459,7 +458,7 @@ th{
         grid-area: texto;
     }
     .img4{
-        margin-top: 10px
+        margin-top: 10px;
         grid-area: img4;
     }
     .img5{
@@ -657,7 +656,56 @@ th{
     transition-duration:4s ;
 }
 
+.encabezado__titulo{
+    transition-duration: 5s;
+    transform:scale(0.5) ;
+}
 
+.contenido img:hover{
+    transform: scale(1.5);
+    transition-duration: 3s;
 
+}
+.producto__boton{
+    animation-name: botoncomprar;
+    animation-duration: 3s;
+    animation-iteration-count:3;
+    animation-timing-function: ease;
+}
 
+@keyframes botoncomprar {
+    0%{
+       transform:scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+        background-color:red;
+        color:white
+    }
     
+    100%{
+        transform: scale(0.5)
+    }
+    
+    
+}
+   
+
+ .contenido__formulario{
+    box-shadow: 40px 40px 20px rgba(155, 10, 10, 0.615) ;
+ }   
+
+ @keyframes botonsucursal {
+    0%{
+        transform: translateY(0)
+    }
+    100%{
+        transform: translateY(300px);
+    }
+    
+ }
+ .sucursal__boton{
+    animation-name: botonsucursal;
+    animation-duration:4s;
+    animation-direction:reverse;
+ }
