@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,9 +12,10 @@
     <title>Inicio-Dream Detail</title>
 </head>
 <body>
-    <header class="encabezado">
-        <h1 class="encabezado__titulo">Dream Detail</h1>
-        <nav>
+    <header class="container encabezado"> 
+     <div class= "row">
+        <h1 class= "encabezado__titulo">Dream Detail</h1>
+        <nav class="col-8">
             <ul class="encabezado__navegacion">
                 <li>Inicio</li>
                 <li><a href="./pages/galeria.html">Galería</a></li>
@@ -22,68 +24,58 @@
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="encabezado__busqueda">
+         <div class="col-4 encabezado__busqueda">
             <label for="busqueda">Buscar</label>
             <input type="search" id="busqueda" name="busqueda">
-        </div>
+         </div>
+     </div>
     </header>
     <hr>
     
-    <main class="contenido">
+    <main class="container-fluid contenido">
        
         <section class="contenido__presentacion">
             <h2>Quienes somos?</h2>
-            <article class="presentacion">
-                <p class="presentacion__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatum alias nihil tempore, accusantium voluptate praesentium, pariatur nesciunt assumenda debitis perspiciatis rem libero suscipit asperiores ducimus quidem architecto delectus culpa!</p>
-                  <div class="img1"><img src="./img/socio1.jpg" alt="fundador:Nahuel Buccafusca"></div>
-                  <div class="img2"><img src="./img/socio2.jpg" alt="fundador:Agustin Miraglia"></div> 
-                  <div class="img3"> <img src="./img/socio3.jpg" alt="fundador:Germán Montero"></div> 
-                  <div class="img4"> <img src="./img/taller1.jpg" alt="taller sucursal Capital"></div> 
-                  <div class="img5"> <img src="./img/taller2.jpg" alt="taller sucursal Provincia"></div> 
-                  <div class="img6"> <img src="./img/taller3.jpg" alt="taller sucursal Córdoba"></div> 
-                
-                </div>
-                    
-                
+            <article class="row fotos">
+                <img class="col-4" src="./img/socio1.jpg" alt="fundador:Nahuel Buccafusca"></div>
+                <img class="col-4" src="./img/socio2.jpg" alt="fundador:Agustin Miraglia"> 
+                <img class="col-4" src="./img/socio3.jpg" alt="fundador:Germán Montero">
+                <p class="col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eos quae quasi, deserunt reiciendis laboriosam quam asperiores id ab dolore? Facilis reiciendis perferendis fuga quisquam dolore debitis quam consequatur blanditiis.</p>
+                <img class="col-4" src="./img/taller1.jpg" alt="taller sucursal Capital">
+                <img class="col-4" src="./img/taller2.jpg" alt="taller sucursal Provincia">
+                <img class="col-4" src="./img/taller3.jpg" alt="taller sucursal Córdoba">
             </article>
         </section>
         <hr>
-        <section class="servicios">
+        <section class="contenido__servicios">
             <h2>Nuestros Servicios</h2>
-            <article class="serviciosart">
-                <div class="servicio1"  >
-                      <h3 class="servicio1__titulo">Limpieza de Interiores</h3>
-                      <p class="servicio1__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, molestiae.</p>
-                      <iframe class="servicio1__video" width="560" height="315" src="https://www.youtube.com/embed/lDY_CQacofw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>   
-                <div class="servicio2"> 
-                      <h3 class="servicio2__titulo">Tratamiento Acrilico</h3>
-                      <p class="servicio2__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, dolor?</p>
-                </div>
-                <div class="servicio3">
-                       <h3 class="servicio3__titulo">Tratamiento Cerámico</h3>
-                       <p class="servicio3__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, cum.</p>
-                </div>
-                <div class="servicio4">
-                        <h3 class="servicio4__titulo">Tratamiento vidrio líquido</h3>
-                        <p class="servicio4__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, nemo?</p>
-                        <iframe class="servicio4__video" width="560" height="315" src="https://www.youtube.com/embed/uCGBFYkcmyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            <article class="row align-items-center">
+                <h3>Limpieza de Interiores</h3>
+                <p class="col-4 col-sm-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quas quasi consectetur, nulla voluptatem provident architecto illo officiis et quae, beatae consequuntur blanditiis quos dolor accusantium expedita incidunt quo iure!</p>
+                <iframe class="col-8 col-sm-4" width="560" height="315" src="https://www.youtube.com/embed/lDY_CQacofw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3>Tratamiento Acrilico</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur nisi, hic quaerat cumque corrupti cum repellendus voluptatem necessitatibus nemo dignissimos. Explicabo unde quae beatae debitis nesciunt blanditiis non eum expedita.</p>
+                <h3>Tratamiento Cerámico</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde dicta minima voluptas porro corporis, sapiente commodi maxime debitis vitae exercitationem, recusandae eum cumque nihil excepturi, tenetur perspiciatis expedita labore ab.</p>
+                <h3>Tratamiento vidrio líquido</h3>
+                <p class="col-4 col-sm-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste vel ut voluptas, praesentium consectetur optio autem sint suscipit placeat sunt nemo provident nesciunt earum ducimus totam quod dolores debitis voluptate.</p>
+                <iframe class="col-8 col-sm-4" width="560" height="315" src="https://www.youtube.com/embed/uCGBFYkcmyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 
 
             </article>
         </section>
     </main>
     <hr>
-    <footer class="piedepagina">
+    <footer class="container piedepagina">
         <div>
             <h2>Seguinos en nuestras redes sociales</h2>
-            <ul class="piedepagina__lista">
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Youtube</li>
+            <ul class="row piedepagina__lista">
+                <li class="col-4">Instagram</li>
+                <li class="col-4">Facebook</li>
+                <li class="col-4">Youtube</li>
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
