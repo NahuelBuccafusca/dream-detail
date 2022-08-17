@@ -390,13 +390,16 @@ th{
 /*responsive---- media querie index*/
 
 @media (max-width: 480px){
+    h2{
+     background: none;
+    }
     .contenido{
         width: 100vw;
         margin-left: 5px;
     }
     .encabezado{
      margin-left: 20px;
-     width: 100vw;
+     width: 90vw;
      height: 30vh;
     }
     .encabezado__titulo{
@@ -417,6 +420,7 @@ th{
     }
     .contenido{
         margin-left: 20px;
+        width: 90vw;
     }
     .contenido__presentacion{
         height: 50vh;
@@ -537,6 +541,7 @@ th{
     font-size: 0.8rem;
     margin: 0;
     padding: 0;
+    width: 55vw;
     }
     .servicio3__titulo{
     font-size: 1rem;
@@ -547,6 +552,7 @@ th{
     font-size: 0.8rem;
     margin: 0;
     padding: 0;
+    width: 55vw;
     
     }
     .servicio4__titulo{
@@ -572,7 +578,7 @@ th{
         margin-left: 20px;
         padding: 0;
         height: 20vh;
-        width: 100vw;
+        width: 90vw;
     }
     .piedepagina h2{
         margin-top: 0;
@@ -616,7 +622,7 @@ th{
         overflow: hidden;
         overflow: scroll;
         margin: 0;
-        width: 90vw;
+        width: 80vw;
         height:40vh
     }
     .producto{
@@ -632,10 +638,13 @@ th{
     }
     .tabla{
 
-        margin-left: 20px;
+        margin-left: 15px;
         margin-top: 2px;
         width: 250px;
         height: 250px;
+    }
+    .contenidocompleto{
+       
     }
     }
     
@@ -709,3 +718,4 @@ th{
     animation-duration:4s;
     animation-direction:reverse;
  }
+
