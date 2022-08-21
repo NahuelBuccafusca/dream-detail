@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +14,20 @@
 </head>
 <body>
     <header class="container encabezado"> 
-     <div class= "row">
+     <div class= "row divencabezado">
         <h1 class= "encabezado__titulo">Dream Detail</h1>
         <nav class="col-8">
             <ul class="encabezado__navegacion">
                 <li>Inicio</li>
                 <li><a href="./pages/galeria.html">Galería</a></li>
                 <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/sucursales.html">Nuestras sucursales</a></li>
+                <li><a href="./pages/sucursales.html">Sucursales</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
          <div class="col-4 encabezado__busqueda">
             <label for="busqueda">Buscar</label>
-            <input type="search" id="busqueda" name="busqueda">
+            <input class="inputnav" type="search" id="busqueda" name="busqueda">
          </div>
      </div>
     </header>
@@ -70,9 +71,18 @@
         <div>
             <h2>Seguinos en nuestras redes sociales</h2>
             <ul class="row piedepagina__lista">
-                <li class="col-4">Instagram</li>
-                <li class="col-4">Facebook</li>
-                <li class="col-4">Youtube</li>
+             <div class="col-4">
+                <i class="col-1 bi bi-instagram"></i>
+                <li class="col-3">Instagram</li>
+             </div>
+             <div class="col-4">
+                <i class="col-1 bi bi-facebook"></i>
+                <li class="col-3">Facebook</li>
+             </div>
+             <div class="col-4">
+                <i class="col-1 bi bi-youtube"></i>
+                <li class="col-3">Youtube</li>
+             </div>
             </ul>
         </div>
     </footer>

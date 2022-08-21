@@ -17,7 +17,9 @@ h1{
     font-size: 6rem;
     text-align: center;
     text-decoration: underline;
-    padding: 50px;
+    padding: 15px;
+    color: #260000;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(121, 121, 1), 0 -10px 20px #824201, 0 -18px 40px rgb(121, 2, 2);
 }
 
 h2{
@@ -55,15 +57,22 @@ body{
     padding: 10px;
     border: 5px solid rgb(96, 10, 10);
 }
+
 .encabezado__busqueda{
     display: flex;
     justify-content: center;
+    font-size: 2rem;
 }
  .encabezado__navegacion{
     display: flex;
     justify-content: space-between;
+    font-size: 2rem;
  }
-
+.inputnav{
+    height:40px ;
+    width: 150px;
+   
+}
 /*main general*/
 .contenido{
     color: white;
@@ -74,6 +83,9 @@ body{
 /*contenido index*/
 .fotos img{
     object-fit: cover;
+}
+.contenido__presentacion{
+    height: 70vh;
 }
 .contenido__servicios{
     color:white;
@@ -88,9 +100,8 @@ body{
     padding: 50px;
     
 }
-.piedepagina__lista{ 
-    color:red;
-}
+
+
 /*pagina contacto*/
 .contenido__formulario{
     background-color:#000000d2;
@@ -226,6 +237,19 @@ border:none;
 }
 
 /*animaciones*/
+@keyframes titulo{
+    0%{
+        text-shadow: none;
+    }
+    70%{
+        text-shadow: none;
+    }
+}
+.encabezado__titulo{
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+}
 .contenido{  
     background: radial-gradient(rgb(96, 10, 10), #000000d2);
   }
@@ -243,12 +267,6 @@ border:none;
 }
 .encabezado__navegacion a:hover{
 color: white;
-}
-
-
-.encabezado__titulo{
-  transition-duration: 5s;
-  transform:scale(0.5) ;
 }
 
 .contenido img:hover{
@@ -300,12 +318,34 @@ color: white;
   animation-direction:reverse;
 }
 /*responsive*/
-@media (max-width:768px){
+@media (max-width:1000px){
+    .contenido img:hover{
+        transform: none;
+    }
+    .divencabezado{
+        flex-direction: column;
+    }
     .encabezado__navegacion{
         flex-direction: column;
     }
     .encabezado__busqueda{
         flex-direction: column;
     }
+    .encabezado__titulo{
+        font-size: 3rem;
+    }
+    .contenido__presentacion{
+        height: 90vh;
+    }
+  }
 
+@media (max-width:410px){
+    .piedepagina__lista{
+        flex-direction: column;
+    }
+}
+
+
+i{
+    color: blue;
 }
