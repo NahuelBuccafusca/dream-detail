@@ -1,0 +1,15 @@
+.piedepagina{
+    color: $color-primario;
+    border:5px solid $color-bordes;
+    padding: 50px;
+
+    i{
+        color: blue;
+    }
+}
+
+@media (max-width:410px){
+    .piedepagina__lista{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,12 @@
+.contenido{
+    &__presentacion{
+        height: 70vh;}
+    &__servicios{
+        color: $color-primario;
+        padding-top: 2px;
+    }
+}
+.fotos img{
+    object-fit: cover;
+}
+
