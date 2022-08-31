@@ -1,6 +1,9 @@
 .contenido{
     &__presentacion{
-        height: 70vh;}
+        height: 80vh;
+        article{
+            margin-top: 80px;
+        }}
     &__servicios{
         color: $color-primario;
         padding-top: 2px;
@@ -10,3 +13,11 @@
     object-fit: cover;
 }
 
+@media(max-width: 768px){
+    .contenido__presentacion{
+        height: 100vh;
+        article{
+            margin-top: 0px;
+        }
+    }
+}

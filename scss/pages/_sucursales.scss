@@ -1,0 +1,37 @@
+.sucursal{
+    background-color:$color-fondo;
+    color:$color-primario;
+    &__nombre{
+        text-decoration: underline;
+        text-align: center;
+    }
+    &__mapa{
+        @include medidas(80px,300px,300px);
+        border-radius: 30%;
+    }
+    &__imagen{
+        @include medidas(80px,300px,300px);
+        border-radius: 30%;
+    }
+    &__boton{
+        @include medidas(80px,100px,100px);
+        color:$color-primario;
+        background-color:$color-bordes;
+        border-radius: 30%;
+        border-color: red;
+        font-weight: bold;
+    }
+ }
+ @media(max-width:490px){
+    .sucursal{
+        &__mapa{
+            margin-left: 0px;
+        }
+        &__imagen{
+            margin-left: 0px;
+        }
+        &__boton{
+            margin-left: 100px;
+        }
+    }
+ }
