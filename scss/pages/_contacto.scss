@@ -1,0 +1,88 @@
+.contenido__formulario {
+    background-color: #000000d2;
+    background-size: cover;
+    border: 5px solid $color-bordes;
+    color: $color-primario;
+    text-align: center;
+    text-decoration: underline;
+    height: 106vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 100px;
+
+    .ip {
+        border-radius: 10%;
+        border: solid 5px $color-bordes;
+    }
+
+    textarea {
+        @extend.ip;
+
+    }
+}
+
+.nombreusuario {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.edadusuario {
+    @extend .nombreusuario;
+}
+
+.emailusuario {
+    @extend .nombreusuario;
+}
+
+.telefonousuario {
+    @extend .nombreusuario;
+}
+
+.mensajeusuario {
+    @extend .nombreusuario;
+}
+
+.promociones {
+    @extend .nombreusuario;
+}
+
+
+@media(max-width:364px) {
+    .contenido__formulario {
+        .ip {
+            width: 150px;
+
+        }
+
+        textarea {
+            height: 100px;
+            width: 150px;
+        }
+
+    }
+
+}
+
+@media(min-width:364px) and (max-width:1496px) {
+    .contenido__formulario {
+        height: 150vh;
+    }
+}
+
+@media (max-width:682px) {
+    .contacto {
+        h2 {
+            font-size: 2rem;
+
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}

@@ -7,12 +7,11 @@ body {
 }
 
 img {
-  height: 20vh;
   border: rgb(96, 10, 10) 5px solid;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   text-align: center;
   text-decoration: underline;
   padding: 15px;
@@ -21,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   text-decoration: underline;
   padding: 5px;
@@ -29,17 +28,25 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 15px;
   padding: 15px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 ul li {
   display: inline-block;
-}
-ul a {
-  text-decoration: none;
-  color: white;
 }
 
 body {
@@ -54,6 +61,7 @@ body {
   padding: 10px;
   border: 5px solid rgb(96, 10, 10);
 }
+
 .encabezado__titulo {
   font-size: 6rem;
   text-align: center;
@@ -62,35 +70,42 @@ body {
   color: rgb(96, 10, 10);
   text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(121, 121, 1), 0 -10px 20px #824201, 0 -18px 40px rgb(121, 2, 2);
 }
+
 .encabezado__navegacion {
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
 }
+
 .encabezado__busqueda {
   display: flex;
   justify-content: center;
   font-size: 2rem;
 }
+
 .encabezado .inputnav {
   height: 40px;
   width: 150px;
+  border-radius: 10%;
+  border: solid 5px rgb(96, 10, 10);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
+  .encabezado {
+    text-align: center;
+  }
+
   .encabezado__navegacion {
     flex-direction: column;
   }
-  .encabezado__busqueda {
+
+  .encabezado__titulo {
     flex-direction: column;
-  }
-  .encabezado____titulo {
     font-size: 3rem;
-  }
-  .divencabezado {
-    flex-direction: column;
+    padding: 0px;
   }
 }
+
 .contenido {
   color: white;
   border: 5px solid rgb(96, 10, 10);
@@ -115,18 +130,29 @@ body {
   color: red;
 }
 
-@media (max-width: 410px) {
+@media (max-width: 484px) {
   .piedepagina__lista {
     flex-direction: column;
   }
 }
-.producto, .producto--destacado {
+
+@media (max-width: 768px) {
+  .piedepagina__titulo {
+    font-size: 1.5rem;
+  }
+}
+
+.producto,
+.producto--destacado {
   background-color: rgba(131, 37, 37, 0.338);
   border: rgba(0, 0, 0, 0.8235294118) solid 5px;
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 290px;
   margin: 15px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
+
 .producto__titulo {
   font-size: 1rem;
   color: white;
@@ -134,22 +160,25 @@ body {
   padding: 2px;
   text-decoration: underline;
 }
+
 .producto__imagen {
-  width: 60%;
-  height: 50%;
-  margin-left: 19%;
+  width: 150px;
+  height: 100px;
+  margin-left: 17%;
   border-color: rgba(0, 0, 0, 0.8235294118);
   border-radius: 10%;
 }
+
 .producto__descripcion {
   text-align: center;
   font-size: 0.8rem;
-  padding: 5px;
+  padding: 3px;
 }
+
 .producto__boton {
   color: red;
   font-weight: bold;
-  margin-left: 38%;
+  margin-left: 36%;
   padding: 6px;
   border: red;
   border-style: groove;
@@ -160,12 +189,22 @@ body {
   background-color: white;
   color: red;
   border: red solid 5px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
 }
+
 .producto--destacado img {
   border-color: red;
+  margin-left: 22%;
 }
+
 .producto--destacado h3 {
   color: red;
+}
+
+.producto--destacado button {
+  margin-left: 37%;
 }
 
 .tabla {
@@ -175,6 +214,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .tabla__titulo {
   color: red;
   text-decoration: underline;
@@ -182,49 +222,222 @@ body {
   text-align: center;
 }
 
-.contenido__presentacion {
+@media (max-width: 682px) {
+  .productos h2 {
+    font-size: 2rem;
+  }
+
+  .productos p {
+    font-size: 1rem;
+  }
+
+  .producto,
+  .producto--destacado {
+    width: 255px;
+    height: 255px;
+  }
+
+  .producto--destacado {
+    height: 350px;
+  }
+
+  .producto--destacado img {
+    margin-left: 17%;
+  }
+}
+
+.tarjetasdivi {
+  justify-content: space-around;
+  margin-top: 80px;
   height: 80vh;
 }
+
+.tarjetasdivii {
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.tarjeta {
+  background-color: rgba(0, 0, 0, 0.8235294118);
+  border: rgb(96, 10, 10) solid 5px;
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta__titulo {
+  margin: 20px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  padding: 2px;
+  text-decoration: underline;
+}
+
+.tarjeta__imagen {
+  width: 150px;
+  height: 100px;
+  margin-left: 27%;
+  border-radius: 3%;
+}
+
+.tarjeta__descripcion {
+  margin: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+.tarjeta__boton {
+  color: white;
+  height: 30px;
+  font-size: 0.8rem;
+  background-color: rgba(131, 37, 37, 0.338);
+  border: none;
+  margin-left: 110px;
+}
+
+@media (max-width: 746px) {
+  .tarjetasdivi {
+    height: 220vh;
+  }
+}
+
+@media (max-width: 355px) {
+  .tarjeta__imagen {
+    margin-left: 23%;
+  }
+}
+
+@media (min-width: 746px) {
+  .tarjetasdivi {
+    height: 130vh;
+  }
+}
+
+@media (min-width: 1116px) {
+  .tarjetasdivi {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 682px) {
+  .galeria h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 361px) {
+  .tarjeta {
+    width: 300px;
+    height: 300px;
+  }
+
+  .tarjeta__boton {
+    margin-left: 30%;
+  }
+}
+
+.contenido__presentacion {
+  height: 180vh;
+}
+
 .contenido__presentacion article {
   margin-top: 80px;
 }
+
+.contenido__presentacion p {
+  padding: 60px;
+}
+
 .contenido__servicios {
   color: white;
   padding-top: 2px;
 }
 
-.fotos img {
-  object-fit: cover;
+.fotos {
+  display: flex;
+  justify-content: space-around;
 }
 
-@media (max-width: 768px) {
+.fotos img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 682px) and (max-width: 932px) {
   .contenido__presentacion {
-    height: 100vh;
-  }
-  .contenido__presentacion article {
-    margin-top: 0px;
+    height: 200vh;
   }
 }
+
+@media (max-width: 682px) {
+  .contenido__presentacion h2 {
+    font-size: 2rem;
+  }
+
+  .contenido__presentacion p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 406px) and (max-width: 606px) {
+  .contenido__presentacion {
+    height: 300vh;
+  }
+}
+
+@media (max-width: 406px) {
+  .contenido__presentacion {
+    height: 400vh;
+  }
+}
+
+@media (max-width: 682px) {
+  .contenido__servicios h2 {
+    font-size: 2rem;
+  }
+
+  .contenido__servicios h3 {
+    font-size: 1.5rem;
+  }
+
+  .contenido__servicios p {
+    font-size: 1rem;
+  }
+}
+
 .sucursal {
   background-color: rgba(131, 37, 37, 0.338);
   color: white;
 }
+
 .sucursal__nombre {
   text-decoration: underline;
   text-align: center;
 }
+
 .sucursal__mapa {
   margin: 80px;
   width: 300px;
   height: 300px;
   border-radius: 30%;
 }
+
 .sucursal__imagen {
   margin: 80px;
   width: 300px;
   height: 300px;
   border-radius: 30%;
+  object-fit: cover;
 }
+
 .sucursal__boton {
   margin: 80px;
   width: 100px;
@@ -238,52 +451,153 @@ body {
 
 @media (max-width: 490px) {
   .sucursal__mapa {
-    margin-left: 0px;
+    margin: 60px;
+    width: 200px;
+    height: 200px;
   }
+
   .sucursal__imagen {
-    margin-left: 0px;
+    margin: 60px;
+    width: 200px;
+    height: 200px;
   }
+
   .sucursal__boton {
-    margin-left: 100px;
+    margin: 60px;
+    width: 80px;
+    height: 80px;
   }
-}
-@keyframes titulo {
-  0% {
-    text-shadow: none;
-  }
-  70% {
-    text-shadow: none;
-  }
-}
-.encabezado__titulo {
-  animation-name: titulo;
-  animation-duration: 4s;
-  animation-timing-function: ease;
 }
 
-.piedepagina {
-  background: radial-gradient(rgb(96, 10, 10), rgba(0, 0, 0, 0.8235294118));
+@media (max-width: 991px) {
+
+  .col-lg-4,
+  .col-lg-2 {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-.encabezado__navegacion li:hover {
-  background-color: rgb(96, 10, 10);
-  font-size: 2rem;
-  width: 120px;
-  height: 60px;
-  text-align: center;
-  justify-content: center;
-  transition-duration: 4s;
+@media (max-width: 682px) {
+  .sucursales h2 {
+    font-size: 2rem;
+  }
+
+  .sucursales h3 {
+    font-size: 1.5rem;
+  }
+
+  .sucursales p {
+    font-size: 1rem;
+  }
 }
-.encabezado__navegacion a:hover {
+
+.contenido__formulario {
+  background-color: rgba(0, 0, 0, 0.8235294118);
+  background-size: cover;
+  border: 5px solid rgb(96, 10, 10);
   color: white;
+  text-align: center;
+  text-decoration: underline;
+  height: 106vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 100px;
 }
 
-.contenido {
-  background: radial-gradient(rgb(96, 10, 10), rgba(0, 0, 0, 0.8235294118));
+.contenido__formulario .ip,
+.contenido__formulario textarea {
+  border-radius: 10%;
+  border: solid 5px rgb(96, 10, 10);
 }
-.contenido img:hover {
-  transform: scale(1.5);
-  transition-duration: 3s;
+
+.nombreusuario,
+.promociones,
+.mensajeusuario,
+.telefonousuario,
+.emailusuario,
+.edadusuario {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 364px) {
+
+  .contenido__formulario .ip,
+  .contenido__formulario textarea {
+    width: 150px;
+  }
+
+  .contenido__formulario textarea {
+    height: 100px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 364px) and (max-width: 1496px) {
+  .contenido__formulario {
+    height: 150vh;
+  }
+}
+
+@media (max-width: 682px) {
+  .contacto h2 {
+    font-size: 2rem;
+  }
+
+  .contacto h3 {
+    font-size: 1.5rem;
+  }
+
+  .contacto p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  @keyframes titulo {
+    0% {
+      text-shadow: none;
+    }
+
+    70% {
+      text-shadow: none;
+    }
+  }
+
+  .encabezado__titulo {
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+  }
+
+  .piedepagina {
+    background: radial-gradient(rgb(96, 10, 10), rgba(0, 0, 0, 0.8235294118));
+  }
+
+  .encabezado__navegacion li:hover {
+    background-color: rgb(96, 10, 10);
+    font-size: 2rem;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    transition-duration: 4s;
+  }
+
+  .encabezado__navegacion a:hover {
+    color: white;
+  }
+
+  .contenido {
+    background: radial-gradient(rgb(96, 10, 10), rgba(0, 0, 0, 0.8235294118));
+  }
+
+  .contenido img:hover {
+    transform: scale(1.5);
+    transition-duration: 3s;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

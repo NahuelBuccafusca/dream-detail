@@ -1,11 +1,12 @@
-.encabezado{
+.encabezado {
     color: $color-primario;
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
     padding: 10px;
     border: 5px solid $color-bordes;
-    &__titulo{
+
+    &__titulo {
         font-size: 6rem;
         text-align: center;
         text-decoration: underline;
@@ -13,37 +14,40 @@
         color: $color-bordes;
         text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(121, 121, 1), 0 -10px 20px #824201, 0 -18px 40px rgb(121, 2, 2);
     }
-    &__navegacion{
+
+    &__navegacion {
         display: flex;
         justify-content: space-between;
         font-size: 2rem;
     }
-    &__busqueda{
+
+    &__busqueda {
         display: flex;
         justify-content: center;
         font-size: 2rem;
     }
-    .inputnav{
-        height:40px ;
-        width: 150px;
-    }
-    }
 
-    @media (max-width:1000px){
-        .encabezado{
-            &__navegacion{
-                flex-direction: column;
-            }
-            &__busqueda{
-                flex-direction: column;
-            }
-            &____titulo{
-                font-size: 3rem;
-            }
-        }
-        .divencabezado{
+    .inputnav {
+        height: 40px;
+        width: 150px;
+        border-radius: 10%;
+        border: solid 5px $color-bordes;
+    }
+}
+
+@media (max-width:900px) {
+    .encabezado {
+        text-align: center;
+
+        &__navegacion {
             flex-direction: column;
         }
-        
-        
+
+        &__titulo {
+            flex-direction: column;
+            font-size: 3rem;
+            padding: 0px;
+        }
     }
+
+}

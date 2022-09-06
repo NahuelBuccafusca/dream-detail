@@ -1,37 +1,76 @@
-.sucursal{
-    background-color:$color-fondo;
-    color:$color-primario;
-    &__nombre{
+.sucursal {
+    background-color: $color-fondo;
+    color: $color-primario;
+
+    &__nombre {
         text-decoration: underline;
         text-align: center;
     }
-    &__mapa{
-        @include medidas(80px,300px,300px);
+
+    &__mapa {
+        @include medidas(80px, 300px, 300px);
         border-radius: 30%;
     }
-    &__imagen{
-        @include medidas(80px,300px,300px);
+
+    &__imagen {
+        @include medidas(80px, 300px, 300px);
         border-radius: 30%;
+        object-fit: cover;
     }
-    &__boton{
-        @include medidas(80px,100px,100px);
-        color:$color-primario;
-        background-color:$color-bordes;
+
+    &__boton {
+        @include medidas(80px, 100px, 100px);
+        color: $color-primario;
+        background-color: $color-bordes;
         border-radius: 30%;
         border-color: red;
         font-weight: bold;
     }
- }
- @media(max-width:490px){
-    .sucursal{
-        &__mapa{
-            margin-left: 0px;
+}
+
+@media(max-width:490px) {
+    .sucursal {
+        &__mapa {
+            @include medidas(60px, 200px, 200px)
         }
-        &__imagen{
-            margin-left: 0px;
+
+        &__imagen {
+            @include medidas(60px, 200px, 200px)
         }
-        &__boton{
-            margin-left: 100px;
+
+        &__boton {
+            @include medidas(60px, 80px, 80px)
         }
     }
- }
+}
+
+@media(max-width:991px) {
+
+    .col-lg-4 {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .col-lg-2 {
+        @extend .col-lg-4;
+    }
+
+}
+
+@media (max-width:682px) {
+    .sucursales {
+        h2 {
+            font-size: 2rem;
+
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
