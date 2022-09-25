@@ -1,0 +1,113 @@
+.divpd {
+    display: flex;
+    justify-content: center;
+}
+
+.producto {
+    background-color: $color-fondo;
+    border: #000000d2 solid 5px;
+    width: 260px;
+    height: 290px;
+    margin: 15px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    &__titulo {
+        font-size: 1rem;
+        color: $color-primario;
+        text-align: center;
+        padding: 2px;
+        text-decoration: underline;
+    }
+
+    &__imagen {
+        width: 150px;
+        height: 100px;
+        margin-left: 17%;
+        border-color: #000000d2;
+        border-radius: 10%;
+
+    }
+
+    &__descripcion {
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 3px;
+    }
+
+    &__boton {
+        color: red;
+        font-weight: bold;
+        margin-left: 36%;
+        padding: 6px;
+        border: red;
+        border-style: groove;
+        border-radius: 10%;
+    }
+}
+
+.producto--destacado {
+    @extend.producto;
+    background-color: $color-primario;
+    color: red;
+    border: red solid 5px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+
+    img {
+        border-color: red;
+        margin-left: 22%;
+    }
+
+    h3 {
+        color: red;
+    }
+
+    button {
+        margin-left: 37%;
+    }
+
+}
+
+.tabla {
+    background-color: $color-fondo;
+    border: #000000d2 solid 5px;
+    color: $color-primario;
+    display: flex;
+    justify-content: center;
+
+    &__titulo {
+        color: red;
+        text-decoration: underline;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:682px) {
+    .productos {
+        h2 {
+            font-size: 2rem;
+
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .producto {
+        width: 255px;
+        height: 255px;
+    }
+
+    .producto--destacado {
+        height: 350px;
+
+        img {
+            margin-left: 17%;
+        }
+    }
+}

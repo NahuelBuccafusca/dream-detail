@@ -1,0 +1,114 @@
+.contenido {
+    &__formulario {
+        background-color: #000000d2;
+        background-size: cover;
+        border: 5px solid $color-bordes;
+        color: $color-primario;
+        text-align: center;
+        text-decoration: underline;
+        height: 95vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .ip {
+            border-radius: 10%;
+            border: solid 5px $color-bordes;
+        }
+
+        textarea {
+            @extend.ip;
+
+        }
+    }
+
+    .nombreusuario {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .edadusuario {
+        @extend .nombreusuario;
+    }
+
+    .emailusuario {
+        @extend .nombreusuario;
+    }
+
+    .telefonousuario {
+        @extend .nombreusuario;
+    }
+
+    .mensajeusuario {
+        @extend .nombreusuario;
+    }
+
+    .promociones {
+        @extend .nombreusuario;
+    }
+
+    &__titulo {
+        text-align: center;
+    }
+}
+
+@media(max-width:362px) {
+    .contenido__formulario {
+        height: 140vh;
+
+        .ip {
+            width: 150px;
+
+        }
+
+        textarea {
+            height: 100px;
+            width: 150px;
+        }
+
+    }
+
+}
+
+.imagenformulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 500px;
+        height: 500px;
+
+    }
+}
+
+@media(min-width:361px) and (max-width:1496px) {
+    .contenido__formulario {
+        height: 170vh;
+    }
+}
+
+@media(max-width:576px) {
+    .textocontacto {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:1200px) {
+    .imagenformulario {
+        display: none;
+    }
+
+    h3 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}

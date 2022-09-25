@@ -1,89 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="description"
+        content="El mejor lugar para mantener la estetica de tu vehículo como si fuera okm.|Conocenos, ofrecemos transparecia y compromiso">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
-    <title>Inicio-Dream Detail</title>
+    <title>Inicio-Dream Detail|Car Detail|Conocenos</title>
 </head>
+
 <body>
-    <header class="encabezado">
-        <h1 class="encabezado__titulo">Dream Detail</h1>
-        <nav>
-            <ul class="encabezado__navegacion">
-                <li>Inicio</li>
-                <li><a href="./pages/galeria.html">Galería</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/sucursales.html">Nuestras sucursales</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="encabezado__busqueda">
-            <label for="busqueda">Buscar</label>
-            <input type="search" id="busqueda" name="busqueda">
+    <header class="container encabezado">
+        <div class="row divencabezado">
+            <h1 class="encabezado__titulo">Dream Detail</h1>
+            <nav class="col-lg-8">
+                <ul class="encabezado__navegacion">
+                    <li>Inicio</li>
+                    <li><a href="./pages/galeria.html">Galería</a></li>
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/sucursales.html">Sucursales</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="col-lg-4 encabezado__busqueda">
+                <label for="busqueda">Buscar</label>
+                <input class="inputnav" type="search" id="busqueda" name="busqueda">
+            </div>
         </div>
     </header>
     <hr>
-    
-    <main class="contenido">
-       
+
+    <main class="container-fluid contenido">
+
         <section class="contenido__presentacion">
             <h2>Quienes somos?</h2>
-            <article class="presentacion">
-                <p class="presentacion__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatum alias nihil tempore, accusantium voluptate praesentium, pariatur nesciunt assumenda debitis perspiciatis rem libero suscipit asperiores ducimus quidem architecto delectus culpa!</p>
-                  <div class="img1"><img src="./img/socio1.jpg" alt="fundador:Nahuel Buccafusca"></div>
-                  <div class="img2"><img src="./img/socio2.jpg" alt="fundador:Agustin Miraglia"></div> 
-                  <div class="img3"> <img src="./img/socio3.jpg" alt="fundador:Germán Montero"></div> 
-                  <div class="img4"> <img src="./img/taller1.jpg" alt="taller sucursal Capital"></div> 
-                  <div class="img5"> <img src="./img/taller2.jpg" alt="taller sucursal Provincia"></div> 
-                  <div class="img6"> <img src="./img/taller3.jpg" alt="taller sucursal Córdoba"></div> 
-                
-                </div>
-                    
-                
+            <article class="row fotos">
+                <div class="col-lg-4 der"><img src="./img/socio1.jpg" alt="fundador:Nahuel Buccafusca"></div>
+                <div class="col-lg-4 der"><img src="./img/socio2.jpg" alt="fundador:Agustin Miraglia"></div>
+                <div class="col-lg-4 der"><img src="./img/socio3.jpg" alt="fundador:Germán Montero"></div>
+                <p> "Dram Detail" es el resultado de un sueño entre tres amigos que con dedicación,
+                    compromiso y responsabilidad se transformó en un proyecto hecho realidad basado en un simple
+                    punto fundamental: la pasión por los autos. Gracias a nuestra calidad de trabajo pudimos crecer día
+                    a
+                    día llegando a abrir nuestras dos sucursales fuera de Buenos Aires; Mendoza y córdoba. Nuestro mayor
+                    compromiso es el de tomar cada vehículo como si fuese nuestro y dejarlo en condiciones similares
+                    a un 0km. Contamos ya con 15 años de experiencia en el rubro brindando un servicio de excelencia
+                    abalado por nuestros propios clientes. </p>
+                <div class="col-lg-4 der"><img src="./img/taller1.jpg" alt="taller sucursal Capital"></div>
+                <div class="col-lg-4 der"><img src="./img/taller2.jpg" alt="taller sucursal Provincia"></div>
+                <div class="col-lg-4 der"><img src="./img/taller3.jpg" alt="taller sucursal Córdoba"></div>
+
             </article>
         </section>
         <hr>
-        <section class="servicios">
+        <section class="contenido__servicios">
             <h2>Nuestros Servicios</h2>
-            <article class="serviciosart">
-                <div class="servicio1"  >
-                      <h3 class="servicio1__titulo">Limpieza de Interiores</h3>
-                      <p class="servicio1__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, molestiae.</p>
-                      <iframe class="servicio1__video" width="560" height="315" src="https://www.youtube.com/embed/lDY_CQacofw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>   
-                <div class="servicio2"> 
-                      <h3 class="servicio2__titulo">Tratamiento Acrilico</h3>
-                      <p class="servicio2__texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, dolor?</p>
-                </div>
-                <div class="servicio3">
-                       <h3 class="servicio3__titulo">Tratamiento Cerámico</h3>
-                       <p class="servicio3__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, cum.</p>
-                </div>
-                <div class="servicio4">
-                        <h3 class="servicio4__titulo">Tratamiento vidrio líquido</h3>
-                        <p class="servicio4__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, nemo?</p>
-                        <iframe class="servicio4__video" width="560" height="315" src="https://www.youtube.com/embed/uCGBFYkcmyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-
+            <article class="row">
+                <p>Todos nuestros servicios cuentan con garantía de 1 mes y trabajamos con productos de marcas líderes a
+                    nivel mundial tales como Sonax, Menzerna y 3M.</p>
+                <strong>
+                    <h3>Limpieza y desinfección de Interiores</h3>
+                </strong>
+                <p class="col-md-6">Se realiza una limpieza del interior completo del vehículo, utilizando maquinas que
+                    trabajan por extracción de la suciedad y otras a vapor para descontaminar el mismo.</p>
+                <iframe class="col-md-6" width="560" height="315" src="https://www.youtube.com/embed/lDY_CQacofw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <strong>
+                    <h3>Tratamiento Acrilico</h3>
+                </strong>
+                <p>El proceso inicia con el lavado a fondo del vehículo. Luego se descontamina la superficia con la
+                    ¨"clay bar", se realizan correcciónes más refinadas de la laca (generalmente con pulidos), y por
+                    último se sella con el sellador que elija el cliente, en este caso, acrílico. Éste tratamiento
+                    brinda una protección de 6 meses.</p>
+                <h3>Tratamiento Cerámico</h3>
+                <p>Éste tratamiento tiene la misma base que el acrilico, la diferencia está en el tipo de sellador que
+                    se utiliza al finalizar el trabajo. Aplicando este proceso se brindan 12 meses de protección.</p>
+                <strong>
+                    <h3>Tratamiento vidrio líquido</h3>
+                </strong>
+                <p class="col-md-6">Brinda una protección de 3 años. Una vez aplicado este tratamiento, el vehículo
+                    tiene un acabado "espejo", una protección contra ácidos,sales y rayos UV, y repele agua y polvo,
+                    facilitando asi sus futuros lavados.</p>
+                <iframe class="col-md-6" width="560" height="315" src="https://www.youtube.com/embed/uCGBFYkcmyk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </article>
         </section>
     </main>
     <hr>
-    <footer class="piedepagina">
+    <footer class="container piedepagina">
         <div>
-            <h2>Seguinos en nuestras redes sociales</h2>
-            <ul class="piedepagina__lista">
-                <li>Instagram</li>
-                <li>Facebook</li>
-                <li>Youtube</li>
+            <h2 class="piedepagina__titulo">Seguinos en nuestras redes sociales</h2>
+            <ul class="row justify-content-center piedepagina__lista ">
+                <li class="col-sm-3"><a class="botonredes" href="https://www.instagram.com/"><i
+                            class="bi bi-instagram"></i>Instagram</a></li>
+                <li class="col-sm-3"><a class="botonredes" href="https://es-la.facebook.com/"><i
+                            class="bi bi-facebook"></i>Facebook</a></li>
+                <li class="col-sm-3"><a class="botonredes" href="https://www.youtube.com/"><i
+                            class="bi bi-youtube"></i>Youtube</a></li>
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

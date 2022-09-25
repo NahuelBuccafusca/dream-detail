@@ -1,0 +1,24 @@
+.piedepagina {
+    color: $color-primario;
+    border: 5px solid $color-bordes;
+    padding: 50px;
+}
+
+
+.bi-facebook {
+    color: map-get($redes, "facebook")
+}
+
+.bi-instagram {
+    color: map-get($redes, "instagram")
+}
+
+.bi-youtube {
+    color: map-get($redes, "youtube")
+}
+
+@media(max-width:768px) {
+    .piedepagina__titulo {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,56 @@
+@media(min-width:1200px) {
+    a:hover {
+        color: $color-primario;
+        transform: scale(1.5);
+        transition: 3s;
+    }
+
+    button:hover {
+        color: $color-primario;
+        transform: scale(1.5);
+        transition: 3s;
+    }
+
+    @keyframes titulo {
+        0% {
+            text-shadow: none;
+        }
+
+        70% {
+            text-shadow: none;
+        }
+    }
+
+    .encabezado__titulo {
+        animation-name: titulo;
+        animation-duration: 4s;
+        animation-timing-function: ease;
+    }
+
+    .piedepagina {
+        background: radial-gradient(rgb(96, 10, 10), #000000d2);
+    }
+
+    .encabezado__navegacion {
+        li:hover {
+            background-color: $color-bordes;
+            font-size: 2rem;
+            width: 120px;
+            height: 60px;
+            text-align: center;
+            justify-content: center;
+            transition-duration: 5s;
+        }
+
+
+    }
+
+    .contenido {
+        background: radial-gradient(rgb(96, 10, 10), #000000d2);
+
+        & img:hover {
+            transform: scale(1.5);
+            transition-duration: 4s;
+        }
+    }
+}
