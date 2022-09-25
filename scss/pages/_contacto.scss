@@ -54,7 +54,7 @@
 
 @media(max-width:362px) {
     .contenido__formulario {
-     
+     height: 105vh;
         .ip {
             width: 150px;
 
@@ -81,6 +81,11 @@
     }
 }
 
+@media(min-width:363px) and (max-width:1496px) {
+    .contenido__formulario {
+        height: 150vh;
+    }
+}
 
 
 @media(max-width:576px) {
