@@ -37,42 +37,48 @@
     </header>
     <hr>
     <main class="container-fluid contenido">
-        <section class="contacto">
+        <section>
             <h2>Contacto</h2>
             <article>
-                <p>Contactanos a través de whatsapp, email, o nuestras redes sociales. Dejanos tus datos incluyendo
+                <p class="textocontacto">Contactanos a través de whatsapp, email, o nuestras redes sociales. Dejanos tus
+                    datos incluyendo
                     modelo de tu vehículo para armar un servicio personalizado para el mismo. Recibimos todo tipo de
                     vehículos, en cualquier estado y preparamos vehículos para la venta.</p>
-                <h3 class="contenido__titulo">Ingresá tus datos</h3>
-                <form class="contenido__formulario">
-                    <div class="nombreusuario">
-                        <label for="nombre-usuario">Apellido y nombre:</label>
-                        <input class="ip" type="text" id="nombre-usuario" name="nombre-usuario">
-                    </div>
-                    <div class="edadusuario">
-                        <label for="edad-usuario">Edad:</label>
-                        <input class="ip" type="number" id="edad-usuario" name="edad-usuario">
-                    </div>
-                    <div class="emailusuario">
-                        <label for="email-usuario">Email:</label>
-                        <input class="ip" type="text" id="email-usuario" name="email-usuario">
-                    </div>
-                    <div class="telefonousuario">
-                        <label for="telefono-usuario">Teléfono:</label>
-                        <input class="ip" type="number" id="telefono-usuario" name="telefono-usuario">
-                    </div>
-                    <div class="mensajeusuario">
-                        <label for="mensaje-usuario">Consultas:</label>
-                        <textarea name="mensaje-usuario" id="mensaje-usuario" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="promociones">
-                        <label for="promociones">Recibir promociones</label>
-                        <input class="ip" type="checkbox" id="promociones" name="promociones">
-                    </div>
-                    <input class="ip" type="submit" value="Enviar consulta">
+                <div class="row">
+                    <div class="col-xl-6 imagenformulario"><img src="../img/fotocontacto.jpg"
+                            alt="Mercedes Benz mojado, en proceso de lavado"></div>
+                    <div class="col-xl-6">
+                        <form class="contenido__formulario">
+                            <h3>Ingresá tus datos</h3>
 
-
-                </form>
+                            <div class="nombreusuario">
+                                <label for="nombre-usuario">Apellido y nombre:</label>
+                                <input class="ip" type="text" id="nombre-usuario" name="nombre-usuario">
+                            </div>
+                            <div class="edadusuario">
+                                <label for="edad-usuario">Edad:</label>
+                                <input class="ip" type="number" id="edad-usuario" name="edad-usuario">
+                            </div>
+                            <div class="emailusuario">
+                                <label for="email-usuario">Email:</label>
+                                <input class="ip" type="text" id="email-usuario" name="email-usuario">
+                            </div>
+                            <div class="telefonousuario">
+                                <label for="telefono-usuario">Teléfono:</label>
+                                <input class="ip" type="number" id="telefono-usuario" name="telefono-usuario">
+                            </div>
+                            <div class="mensajeusuario">
+                                <label for="mensaje-usuario">Consultas:</label>
+                                <textarea name="mensaje-usuario" id="mensaje-usuario" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="promociones">
+                                <label for="promociones">Recibir promociones</label>
+                                <input class="ip" type="checkbox" id="promociones" name="promociones">
+                            </div>
+                            <input class="ip" type="submit" value="Enviar consulta">
+                        </form>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
@@ -80,19 +86,13 @@
     <footer class="container piedepagina">
         <div>
             <h2 class="piedepagina__titulo">Seguinos en nuestras redes sociales</h2>
-            <ul class="row piedepagina__lista">
-                <div class="col-4">
-                    <a href="https://www.instagram.com/"><i class="col-1 bi bi-instagram"></i></a>
-                    <li class="col-3">Instagram</li>
-                </div>
-                <div class="col-4">
-                    <a href="https://es-la.facebook.com/"><i class="col-1 bi bi-facebook"></i></a>
-                    <li class="col-3">Facebook</li>
-                </div>
-                <div class="col-4">
-                    <a href="https://www.youtube.com/"><i class="col-1 bi bi-youtube"></i></a>
-                    <li class="col-3">Youtube</li>
-                </div>
+            <ul class="row justify-content-center piedepagina__lista ">
+                <li class="col-sm-3"><a class="botonredes" href="https://www.instagram.com/"><i
+                            class="bi bi-instagram"></i>Instagram</a></li>
+                <li class="col-sm-3"><a class="botonredes" href="https://es-la.facebook.com/"><i
+                            class="bi bi-facebook"></i>Facebook</a></li>
+                <li class="col-sm-3"><a class="botonredes" href="https://www.youtube.com/"><i
+                            class="bi bi-youtube"></i>Youtube</a></li>
             </ul>
         </div>
     </footer>

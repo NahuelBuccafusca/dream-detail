@@ -1,4 +1,15 @@
 @media(min-width:1200px) {
+    a:hover {
+        color: $color-primario;
+        transform: scale(1.5);
+        transition: 3s;
+    }
+
+    button:hover {
+        color: $color-primario;
+        transform: scale(1.5);
+        transition: 3s;
+    }
 
     @keyframes titulo {
         0% {
@@ -28,12 +39,9 @@
             height: 60px;
             text-align: center;
             justify-content: center;
-            transition-duration: 4s;
+            transition-duration: 5s;
         }
 
-        a:hover {
-            color: $color-primario;
-        }
 
     }
 
@@ -42,7 +50,7 @@
 
         & img:hover {
             transform: scale(1.5);
-            transition-duration: 3s;
+            transition-duration: 4s;
         }
     }
 }

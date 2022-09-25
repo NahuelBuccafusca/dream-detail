@@ -39,55 +39,70 @@
         <section class="galeria">
             <h2>Galeria</h2>
             <article>
-                <p>Te mostramos nuestros últimos trabajos realizados; Así puede quedar tu auto!</p>
+                <p class="galeria__texto">Te mostramos nuestros últimos trabajos realizados; Así puede quedar tu auto!
+                </p>
             </article>
-            <div class="row tarjetasdivi">
-                <article class="col-4 tarjeta">
+            <div class="row justify-content-around">
+                <div class="col-4 tarjeta">
                     <h3 class="tarjeta__titulo">Porsche gt2.</h3>
                     <img src="../img/porsche-amarillo.jpg" alt="Porsche amarillo tratamiento acrilico"
                         class="tarjeta__imagen">
                     <p class="tarjeta__descripcion">Tratamiento Acrilico + pulido de ópticas.</p>
-                    <a href="https://www.instagram.com"><button class="tarjeta__boton">Ver trabajo completo</button></a>
-                </article>
-                <article class="col-4 tarjeta">
+                    <a href="https://www.instagram.com">
+                        <button class="tarjeta__boton">Ver trabajo completo</button>
+                    </a>
+                </div>
+                <div class="col-4 tarjeta">
                     <h3 class="tarjeta__titulo">Chevrolet Impala.</h3>
                     <img src="../img/impala.jpg" alt="Impala verde tratamiento ceramico" class="tarjeta__imagen">
                     <p class="tarjeta__descripcion">Tratamiento cerámico.</p>
-                    <a href="https://www.instagram.com"><button class="tarjeta__boton">Ver trabajo completo</button></a>
-                </article>
-                <article class="col-4 tarjeta">
+                    <a href="https://www.instagram.com">
+                        <button class="tarjeta__boton">Ver trabajo completo</button>
+                    </a>
+                </div>
+                <div class="col-4 tarjeta">
                     <h3 class="tarjeta__titulo">Porsche 911.</h3>
                     <img src="../img/porsche.jpg" alt="Porsche negro tratamiento vidrio liquido"
                         class="tarjeta__imagen">
-                    <p class="tarjeta__descripcion">Tratamiento vidrio líquido + limpieza de interior.</p>
-                    <a href="https://www.instagram.com"><button class="tarjeta__boton">Ver trabajo completo</button></a>
-                </article>
+                    <p class="tarjeta__descripcion">Vidrio líquido + limpieza de interior.</p>
+                    <a href="https://www.instagram.com">
+                        <button class="tarjeta__boton">Ver trabajo completo</button>
+                    </a>
+                </div>
             </div>
-            <div class="row tarjetasdivii">
-                <article class="col-3 tarjeta">
+            <div class="row justify-content-center">
+                <div class="col-3 tarjeta">
                     <h3 class="tarjeta__titulo">Ford Mustang.</h3>
                     <img src="../img/mustang.jpg" alt="Ford Mustang rojo pulido-abrillantado" class="tarjeta__imagen">
                     <p class="tarjeta__descripcion">Pulido + abrillantado.</p>
-                    <a href="https://www.instagram.com"><button class="tarjeta__boton">Ver trabajo completo</button></a>
-                </article>
-                <article class="col-3 tarjeta">
+                    <a href="https://www.instagram.com">
+                        <button class="tarjeta__boton">Ver trabajo completo</button>
+                    </a>
+                </div>
+                <div class="col-3 tarjeta">
                     <h3 class="tarjeta__titulo">Mercedes Benz clase e.</h3>
                     <img src="../img/mercedes.jpg" alt="Mercedes Benz interior" class="tarjeta__imagen">
                     <p class="tarjeta__descripcion">Limpieza de tapizados + descontaminado.</p>
-                    <a href="https://www.instagram.com"><button class="tarjeta__boton">Ver trabajo completo</button></a>
-                </article>
-                <article class="col-3 tarjeta">
+                    <a href="https://www.instagram.com">
+                        <button class="tarjeta__boton">Ver trabajo completo</button>
+                    </a>
+                </div>
+                <div class="col-3 tarjeta">
                     <h3 class="tarjeta__titulo">Volkswagen Passat.</h3>
                     <img src="../img/vw-passat.jpg" alt="Óptica vw. Passat" class="tarjeta__imagen">
                     <p class="tarjeta__descripcion">Pulido + abrillantado de ópticas.</p>
-                    <a href="https://www.instagram.com"><button class="tarjeta__boton">Ver trabajo completo</button></a>
-                </article>
-                <article class="col-3 tarjeta">
+                    <a href="https://www.instagram.com">
+                        <button class="tarjeta__boton">Ver trabajo completo</button>
+                    </a>
+                </div>
+                <div class="col-3 tarjeta">
                     <h3 class="tarjeta__titulo">BMW 120i.</h3>
                     <img src="../img/bmw-interior.jpg" alt="Bmw interior" class="tarjeta__imagen">
                     <p class="tarjeta__descripcion">Restauración de cueros + limpieza de interior.</p>
-                    <a href="https://www.instagram.com"><button class="tarjeta__boton">Ver trabajo completo</button></a>
-                </article>
+                    <a href="https://www.instagram.com">
+                        <button class="tarjeta__boton">Ver trabajo completo</button>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -95,19 +110,13 @@
     <footer class="container piedepagina">
         <div>
             <h2 class="piedepagina__titulo">Seguinos en nuestras redes sociales</h2>
-            <ul class="row piedepagina__lista">
-                <div class="col-4">
-                    <a href="https://www.instagram.com/"><i class="col-1 bi bi-instagram"></i></a>
-                    <li class="col-3">Instagram</li>
-                </div>
-                <div class="col-4">
-                    <a href="https://es-la.facebook.com/"><i class="col-1 bi bi-facebook"></i></a>
-                    <li class="col-3">Facebook</li>
-                </div>
-                <div class="col-4">
-                    <a href="https://www.youtube.com/"><i class="col-1 bi bi-youtube"></i></a>
-                    <li class="col-3">Youtube</li>
-                </div>
+            <ul class="row justify-content-center piedepagina__lista ">
+                <li class="col-sm-3"><a class="botonredes" href="https://www.instagram.com/"><i
+                            class="bi bi-instagram"></i>Instagram</a></li>
+                <li class="col-sm-3"><a class="botonredes" href="https://es-la.facebook.com/"><i
+                            class="bi bi-facebook"></i>Facebook</a></li>
+                <li class="col-sm-3"><a class="botonredes" href="https://www.youtube.com/"><i
+                            class="bi bi-youtube"></i>Youtube</a></li>
             </ul>
         </div>
     </footer>

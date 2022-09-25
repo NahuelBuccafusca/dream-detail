@@ -17,16 +17,6 @@
     color: map-get($redes, "youtube")
 }
 
-
-@media (max-width:484px) {
-    .piedepagina {
-        &__lista {
-            flex-direction: column;
-        }
-
-    }
-}
-
 @media(max-width:768px) {
     .piedepagina__titulo {
         font-size: 1.5rem;

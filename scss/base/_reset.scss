@@ -8,9 +8,11 @@
 
     img {
         border: $color-bordes 5px solid;
+        object-fit: cover;
     }
 
     h1 {
+        font-style: italic;
         font-size: 8rem;
         text-align: center;
         text-decoration: underline;
@@ -25,6 +27,7 @@
         text-decoration: underline;
         padding: 5px;
         background-color: $color-fondo ;
+        font-style: italic;
 
     }
 
@@ -33,11 +36,11 @@
         margin: 15px;
         padding: 15px;
         font-weight: bold;
+        font-style: italic;
     }
 
     p {
         font-size: 1.5rem;
-        font-style: italic;
         text-align: center;
     }
 

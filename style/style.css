@@ -8,9 +8,11 @@ body {
 
 img {
   border: rgb(96, 10, 10) 5px solid;
+  object-fit: cover;
 }
 
 h1 {
+  font-style: italic;
   font-size: 8rem;
   text-align: center;
   text-decoration: underline;
@@ -25,6 +27,7 @@ h2 {
   text-decoration: underline;
   padding: 5px;
   background-color: rgba(131, 37, 37, 0.338);
+  font-style: italic;
 }
 
 h3 {
@@ -32,11 +35,11 @@ h3 {
   margin: 15px;
   padding: 15px;
   font-weight: bold;
+  font-style: italic;
 }
 
 p {
   font-size: 1.5rem;
-  font-style: italic;
   text-align: center;
 }
 
@@ -56,12 +59,11 @@ body {
 .encabezado {
   color: white;
   background-image: url(../img/fondo.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   padding: 10px;
   border: 5px solid rgb(96, 10, 10);
 }
-
 .encabezado__titulo {
   font-size: 6rem;
   text-align: center;
@@ -70,19 +72,16 @@ body {
   color: rgb(96, 10, 10);
   text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(121, 121, 1), 0 -10px 20px #824201, 0 -18px 40px rgb(121, 2, 2);
 }
-
 .encabezado__navegacion {
   display: flex;
   justify-content: space-between;
   font-size: 2rem;
 }
-
 .encabezado__busqueda {
   display: flex;
   justify-content: center;
   font-size: 2rem;
 }
-
 .encabezado .inputnav {
   height: 40px;
   width: 150px;
@@ -94,18 +93,20 @@ body {
   .encabezado {
     text-align: center;
   }
-
   .encabezado__navegacion {
     flex-direction: column;
   }
-
   .encabezado__titulo {
     flex-direction: column;
     font-size: 3rem;
     padding: 0px;
   }
 }
-
+@media (min-width: 1500px) {
+  .encabezado {
+    height: 35vh;
+  }
+}
 .contenido {
   color: white;
   border: 5px solid rgb(96, 10, 10);
@@ -130,20 +131,17 @@ body {
   color: red;
 }
 
-@media (max-width: 484px) {
-  .piedepagina__lista {
-    flex-direction: column;
-  }
-}
-
 @media (max-width: 768px) {
   .piedepagina__titulo {
     font-size: 1.5rem;
   }
 }
+.divpd {
+  display: flex;
+  justify-content: center;
+}
 
-.producto,
-.producto--destacado {
+.producto, .producto--destacado {
   background-color: rgba(131, 37, 37, 0.338);
   border: rgba(0, 0, 0, 0.8235294118) solid 5px;
   width: 260px;
@@ -152,7 +150,6 @@ body {
   margin-top: 40px;
   margin-bottom: 60px;
 }
-
 .producto__titulo {
   font-size: 1rem;
   color: white;
@@ -160,7 +157,6 @@ body {
   padding: 2px;
   text-decoration: underline;
 }
-
 .producto__imagen {
   width: 150px;
   height: 100px;
@@ -168,13 +164,11 @@ body {
   border-color: rgba(0, 0, 0, 0.8235294118);
   border-radius: 10%;
 }
-
 .producto__descripcion {
   text-align: center;
   font-size: 0.8rem;
   padding: 3px;
 }
-
 .producto__boton {
   color: red;
   font-weight: bold;
@@ -193,16 +187,13 @@ body {
   height: 300px;
   border-radius: 10%;
 }
-
 .producto--destacado img {
   border-color: red;
   margin-left: 22%;
 }
-
 .producto--destacado h3 {
   color: red;
 }
-
 .producto--destacado button {
   margin-left: 37%;
 }
@@ -214,7 +205,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 .tabla__titulo {
   color: red;
   text-decoration: underline;
@@ -226,48 +216,29 @@ body {
   .productos h2 {
     font-size: 2rem;
   }
-
   .productos p {
     font-size: 1rem;
   }
-
-  .producto,
-  .producto--destacado {
+  .producto, .producto--destacado {
     width: 255px;
     height: 255px;
   }
-
   .producto--destacado {
     height: 350px;
   }
-
   .producto--destacado img {
     margin-left: 17%;
   }
 }
-
-.tarjetasdivi {
-  justify-content: space-around;
-  margin-top: 80px;
-  height: 80vh;
-}
-
-.tarjetasdivii {
-  justify-content: space-around;
-  margin-top: 10px;
-  margin-bottom: 80px;
-}
-
 .tarjeta {
   background-color: rgba(0, 0, 0, 0.8235294118);
   border: rgb(96, 10, 10) solid 5px;
   width: 350px;
   height: 350px;
-  margin: 10px;
+  margin: 13px;
   display: flex;
   flex-direction: column;
 }
-
 .tarjeta__titulo {
   margin: 20px;
   font-size: 1.5rem;
@@ -276,21 +247,18 @@ body {
   padding: 2px;
   text-decoration: underline;
 }
-
 .tarjeta__imagen {
   width: 150px;
   height: 100px;
   margin-left: 27%;
   border-radius: 3%;
 }
-
 .tarjeta__descripcion {
   margin: 20px;
   text-align: center;
   font-size: 0.8rem;
   padding: 5px;
 }
-
 .tarjeta__boton {
   color: white;
   height: 30px;
@@ -300,136 +268,93 @@ body {
   margin-left: 110px;
 }
 
-@media (max-width: 746px) {
-  .tarjetasdivi {
-    height: 220vh;
-  }
-}
-
-@media (max-width: 355px) {
-  .tarjeta__imagen {
-    margin-left: 23%;
-  }
-}
-
-@media (min-width: 746px) {
-  .tarjetasdivi {
-    height: 130vh;
-  }
-}
-
-@media (min-width: 1116px) {
-  .tarjetasdivi {
-    height: 70vh;
-  }
-}
-
 @media (max-width: 682px) {
   .galeria h2 {
     font-size: 2.5rem;
   }
+  .galeria__texto {
+    font-size: 1rem;
+  }
 }
-
-@media (max-width: 361px) {
+@media (max-width: 375px) {
   .tarjeta {
     width: 300px;
     height: 300px;
   }
-
   .tarjeta__boton {
     margin-left: 30%;
   }
+  .tarjeta__imagen {
+    margin-left: 23%;
+  }
 }
-
-.contenido__presentacion {
-  height: 180vh;
-}
-
 .contenido__presentacion article {
   margin-top: 80px;
 }
-
 .contenido__presentacion p {
   padding: 60px;
 }
-
 .contenido__servicios {
   color: white;
   padding-top: 2px;
 }
-
-.fotos {
+.contenido .der {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
-
-.fotos img {
+.contenido .fotos img {
   object-fit: cover;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-@media (min-width: 682px) and (max-width: 932px) {
-  .contenido__presentacion {
-    height: 200vh;
+@media (max-width: 767px) {
+  .contenido__presentacion p {
+    padding: 10px;
   }
-}
-
-@media (max-width: 682px) {
+  .contenido__presentacion .fotos img {
+    width: 250px;
+    height: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
   .contenido__presentacion h2 {
     font-size: 2rem;
   }
-
   .contenido__presentacion p {
     font-size: 1rem;
   }
-}
-
-@media (min-width: 406px) and (max-width: 606px) {
-  .contenido__presentacion {
-    height: 300vh;
-  }
-}
-
-@media (max-width: 406px) {
-  .contenido__presentacion {
-    height: 400vh;
-  }
-}
-
-@media (max-width: 682px) {
   .contenido__servicios h2 {
     font-size: 2rem;
   }
-
   .contenido__servicios h3 {
     font-size: 1.5rem;
   }
-
   .contenido__servicios p {
     font-size: 1rem;
   }
 }
-
+@media (max-width: 992px) {
+  .contenido__presentacion .fotos {
+    margin-top: 5px;
+  }
+}
 .sucursal {
   background-color: rgba(131, 37, 37, 0.338);
   color: white;
 }
-
 .sucursal__nombre {
   text-decoration: underline;
   text-align: center;
 }
-
 .sucursal__mapa {
   margin: 80px;
   width: 300px;
   height: 300px;
   border-radius: 30%;
 }
-
 .sucursal__imagen {
   margin: 80px;
   width: 300px;
@@ -437,7 +362,6 @@ body {
   border-radius: 30%;
   object-fit: cover;
 }
-
 .sucursal__boton {
   margin: 80px;
   width: 100px;
@@ -455,43 +379,34 @@ body {
     width: 200px;
     height: 200px;
   }
-
   .sucursal__imagen {
     margin: 60px;
     width: 200px;
     height: 200px;
   }
-
   .sucursal__boton {
     margin: 60px;
     width: 80px;
     height: 80px;
   }
 }
-
 @media (max-width: 991px) {
-
-  .col-lg-4,
-  .col-lg-2 {
+  .col-lg-4, .col-lg-2 {
     display: flex;
     justify-content: center;
   }
 }
-
 @media (max-width: 682px) {
   .sucursales h2 {
     font-size: 2rem;
   }
-
   .sucursales h3 {
     font-size: 1.5rem;
   }
-
   .sucursales p {
     font-size: 1rem;
   }
 }
-
 .contenido__formulario {
   background-color: rgba(0, 0, 0, 0.8235294118);
   background-size: cover;
@@ -499,83 +414,97 @@ body {
   color: white;
   text-align: center;
   text-decoration: underline;
-  height: 106vh;
+  height: 95vh;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding-top: 100px;
 }
-
-.contenido__formulario .ip,
-.contenido__formulario textarea {
+.contenido__formulario .ip, .contenido__formulario textarea {
   border-radius: 10%;
   border: solid 5px rgb(96, 10, 10);
 }
-
-.nombreusuario,
-.promociones,
-.mensajeusuario,
-.telefonousuario,
-.emailusuario,
-.edadusuario {
+.contenido .nombreusuario, .contenido .promociones, .contenido .mensajeusuario, .contenido .telefonousuario, .contenido .emailusuario, .contenido .edadusuario {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
+.contenido__titulo {
+  text-align: center;
+}
 
-@media (max-width: 364px) {
-
-  .contenido__formulario .ip,
-  .contenido__formulario textarea {
+@media (max-width: 362px) {
+  .contenido__formulario {
+    height: 140vh;
+  }
+  .contenido__formulario .ip, .contenido__formulario textarea {
     width: 150px;
   }
-
   .contenido__formulario textarea {
     height: 100px;
     width: 150px;
   }
 }
-
-@media (min-width: 364px) and (max-width: 1496px) {
-  .contenido__formulario {
-    height: 150vh;
-  }
+.imagenformulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagenformulario img {
+  width: 500px;
+  height: 500px;
 }
 
-@media (max-width: 682px) {
-  .contacto h2 {
-    font-size: 2rem;
+@media (min-width: 361px) and (max-width: 1496px) {
+  .contenido__formulario {
+    height: 170vh;
   }
-
-  .contacto h3 {
-    font-size: 1.5rem;
-  }
-
-  .contacto p {
+}
+@media (max-width: 576px) {
+  .textocontacto {
     font-size: 1rem;
   }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
 }
-
+@media (max-width: 1200px) {
+  .imagenformulario {
+    display: none;
+  }
+  h3 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+}
 @media (min-width: 1200px) {
+  a:hover {
+    color: white;
+    transform: scale(1.5);
+    transition: 3s;
+  }
+  button:hover {
+    color: white;
+    transform: scale(1.5);
+    transition: 3s;
+  }
   @keyframes titulo {
     0% {
       text-shadow: none;
     }
-
     70% {
       text-shadow: none;
     }
   }
-
   .encabezado__titulo {
     animation-name: titulo;
     animation-duration: 4s;
     animation-timing-function: ease;
   }
-
   .piedepagina {
     background: radial-gradient(rgb(96, 10, 10), rgba(0, 0, 0, 0.8235294118));
   }
-
   .encabezado__navegacion li:hover {
     background-color: rgb(96, 10, 10);
     font-size: 2rem;
@@ -583,20 +512,14 @@ body {
     height: 60px;
     text-align: center;
     justify-content: center;
-    transition-duration: 4s;
+    transition-duration: 5s;
   }
-
-  .encabezado__navegacion a:hover {
-    color: white;
-  }
-
   .contenido {
     background: radial-gradient(rgb(96, 10, 10), rgba(0, 0, 0, 0.8235294118));
   }
-
   .contenido img:hover {
     transform: scale(1.5);
-    transition-duration: 3s;
+    transition-duration: 4s;
   }
 }
 
